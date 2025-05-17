@@ -3,78 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portefolio</title>
+    <title>Mon Portfolio | GHOST</title>
+    
     <link rel="stylesheet" href="styles/slyles.css">
 </head>
 <body>
-    <header>
-        <h1>MAMBOTE MAZULU Icksan</h1>
-        <p>Développeur Web / Design / [Etudiant]</p>
-        <nav>
-            <ul>
-                <li><a href="#apropos">A propos</a></li>
-                <li><a href="#projets">projET</a></li>
-                <li><a href="#competences">Compétences</a> </li>
+    <nav class="navbar">
+        <div class="container">
+            <a href="images/logo.png" class="logo" width="50px">MAMBOTE MAZULU Icksan</a>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#skills">Compétences</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>                                                               
+        </div>
+    </nav>
 
-    <section id="apropos">
-        <h2>A propos de moi</h2>
-        <p> ___________________</p>
-        <img src="---------" alt="Ma photo" width="200">
-
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Bonjour, je suis <span>MAMBOTE</span></h1>
+                <h2>Etudiant</h2>
+                <p>Je crée des solutions web modernes et élégantes</p>
+                <a href="#projects" class="btn">Voir mes projets</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/2025_03_25_12_27_IMG_6194.JPG"  alt="Photo de profil">
+            </div>
+        </div>
     </section>
-     <section id="projets">
-            <h2>Mes projets</h2>
-            <div class="projet">
-                <h3>Nom du projet 1</h3>
-                <p>Description du projet.</p>
-                <a href="#">Voir le projet</a>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">À <span>propos</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Qui suis-je ?</h3>
+                    <p>Je suis un passionné de développement web avec quelques moiq d'expérience. J'aime créer des interfaces utilisateur intuitives et des expériences digitales mémorables.</p>
+                    <p>je connais pas grand chose mais le truc je suis obseder à l'idée de la perfection, c'est un defaut je sais mais c'est ma nature enfaite je n'y peux rien</p>
+                    <p>Mon approche combine créativité et rigueur technique pour livrer des produits de qualité.</p>
+                    <div class="about-info">
+                        <div>
+                            <span>Nom :</span> MAMBOTE MAZULU Icksan
+                        </div>
+                        <div>
+                            <span>Email :</span> <a href="mailto:contact@icksanmambote.com">Email</a></span>
+                        </div>
+                        <div>
+                            <span>Expérience :</span> quelques mois 
+                        </div>
+                        <div>
+                            <span>Freelance :</span> Disponible
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Télécharger mon CV</a>
+                </div>
+                <div class="about-progress">
+                    <h3>Mes compétences</h3>
+                    <div class="progress-bar">
+                        <div class="progress-info">
+                            <span>HTML/CSS</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress-line html"></div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-info">
+                            <span>JavaScript</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-line js"></div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-info">
+                            <span>UI/UX Design</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-line design"></div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-info">
+                            <span>Php</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-line php"></div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-info">
+                            <span>Base des données MySQL</span>
+                            <span>45%</span>
+                        </div>
+                        <div class="progress-line MySQL"></div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-info">
+                            <span>Python</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress-line python"></div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-info">
+                            <span>Langage C</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="progress-line Langage_c"></div>
+                    </div>
+                </div>
             </div>
-            <div class="projet">
-                <h3>Nom du projet 2</h3>
-                <p>Description du projet.</p>
-                <a href="#">Voir le projet</a>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Mes <span>projets</span></h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/600x400" alt="Projet 1">
+                    <div class="project-info">
+                        <h3>Site E-commerce</h3>
+                        <p>Plateforme de vente en ligne avec système de paiement</p>
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-link"></i> Voir</a>
+                            <a href="#"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/600x400" alt="Projet 2">
+                    <div class="project-info">
+                        <h3>Application Web</h3>
+                        <p>Outil de gestion de tâches en temps réel</p>
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-link"></i> Voir</a>
+                            <a href="#"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/600x400" alt="Projet 3">
+                    <div class="project-info">
+                        <h3>Portfolio Artistique</h3>
+                        <p>Site vitrine pour un photographe professionnel</p>
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-link"></i> Voir</a>
+                            <a href="#"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-    
-        <section id="competences">
-            <h2>Mes compétences</h2>
-            <ul>
-                <li>HTML/CSS</li>
-                <li>JavaScript</li>
-                <li>php/MySql</li>
-                <li>python</li>
-                <li>Langage C</li>
-            </ul>
-        
-            section id="contact">
-            <h2>Contactez-moi</h2>
-            <form>
-                <input type="text" placeholder="Votre nom" required>
-                <input type="email" placeholder="Votre email" required>
-                <textarea placeholder="Votre message" required></textarea>
-                <button type="submit">Envoyer</button>
-            </form>
-            <ul>
-                <li>Par appel: <a href="tel:+243895025138">Phone</li>
-                
-                <li>Par Facebook: <a href="https://www.facebook.com/icksan.mambote">Facebook</a></li>
-                <li>Par Instagram: <a href="https://www.instagram.com/icksan_mambote/">Instagram</a></li>
-                <li>Par LinkedIn: <a href="https://www.linkedin.com/in/icksan-mambote-4b0b1b1b8/">LinkedIn</a></li>
-                <li>Par mail: <a href="mailto:contact@icksanmambote.com">Email</li>
-            </ul>
-        </section>
-    
-        <footer>
-            <p>&copy; 2023 Mon Portfolio. Tous droits réservés.</p>
-            <div class="reseaux">
-                <a href="">LinkedIn</a>
-                <a href="https://github.com/RzigSmith/Ghost-">GitHub</a>
-                <a href="https://x.com/smithghost16?s=11">Twitter</a>
+            <a href="#" class="btn">Voir plus de projets</a>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Mes <span>compétences</span></h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Développement</h3>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>PHP</li>
+                        <li>Base des donées MySQL</li>
+                        <li>Python</li>
+                        <li>Langage C</li>
+                        
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-paint-brush"></i> Design</h3>
+                    <ul>
+                        <li>UI/UX Design</li>
+                        <li>Responsive Design</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Outils</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>Webpack</li>
+                        <li>VS Code</li>
+                        <li>Terminal</li>
+                        <li>Wamp server</li>
+                    </ul>
+                </div>
             </div>
-        </footer>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Me <span>contacter</span></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Disponible pour de nouvelles opportunités</h3>
+                    <p>Si vous avez un projet ou souhaitez discuter, n'hésitez pas à me contacter.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span><a href="mailto:contact@icksanmambote.com">email</a></span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span><a href="tel:+243895025138">Phone</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ville, Pays</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/RzigSmith/Ghost-">GitHub><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/icksan-mambote-4b0b1b1b8/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/smithghost16?s=11"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/icksan341/#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Votre nom" required>
+                    <input type="email" placeholder="Votre email" required>
+                    <input type="text" placeholder="Sujet">
+                    <textarea placeholder="Votre message" required></textarea>
+                    <button type="submit" class="btn">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 [@Ghost]. Tous droits réservés.</p>
+            <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+   
 </body>
 </html>
