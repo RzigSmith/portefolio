@@ -191,7 +191,7 @@ img {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     padding-top: 80px;
@@ -292,6 +292,28 @@ img {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+}/* ...existing code... */
+.footer {
+    background: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+.footer-links a {
+    color: #fff;
+    margin: 0 8px;
+    text-decoration: none;
+    font-size: 1em;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 .progress-line {
@@ -548,10 +570,11 @@ img {
 
 /* Footer */
 .footer {
-    background-color: var(--dark-color);
-    color: var(--white);
-    padding: 30px 0;
+    background: #222;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
+    margin-top: 40px;
 }
 
 .back-to-top {
