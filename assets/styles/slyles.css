@@ -1,3 +1,4 @@
+/* filepath: e:\pratique html\portefolio\styles\slyles.css */
 /* Variables CSS */
 :root {
     --primary-color: #3498db;
@@ -158,6 +159,36 @@ img {
     transition: var(--transition);
 }
 
+/* Sidebar Menu */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hidden by default */
+    width: 250px;
+    height: 100%;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    transition: left var(--transition);
+    z-index: 1001;
+}
+
+.sidebar.active {
+    left: 0; /* Show the sidebar */
+}
+
+.sidebar ul {
+    padding: 20px;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
 /* Hero Section */
 .hero {
     height: 100vh;
@@ -212,8 +243,8 @@ img {
 }
 
 .about-content {
-     display: flex;                 /* Dispose les parties tex et compétences cote à cote */
-     gap: 50px;                        /* espace entre les deux colones    */
+     display: flex;                 
+     gap: 50px;                        
     margin-top: 50px;
 }
 
@@ -234,7 +265,7 @@ img {
 
 .about-info {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);          /*crée une grille à deux colonne pour les informations clés*/
+    grid-template-columns: repeat(2, 1fr);          
     gap: 15px;
     margin: 30px 0;
 }
@@ -256,7 +287,7 @@ img {
 .progress-bar {
     margin-bottom: 25px;
 }
-/* afficher le nom et le pourcentage sur une même ligne */
+
 .progress-info {
     display: flex;
     justify-content: space-between;
@@ -297,15 +328,17 @@ img {
 }
 
 .MySQL::after {
-    width: 45%;
+    width: 75%;
 }
 
 .python::after {
     width: 70%;
 }
+
 .Langage_c::after {
     width: 65%;
 }
+
 /* Projects Section */
 .projects {
     padding: 100px 0;
@@ -383,7 +416,7 @@ img {
 
 .skills-container {
     display: flex;
-    gap: 30px;                  /*espacement entre les categories*/
+    gap: 30px;                  
     margin-top: 50px;
 }
 
@@ -409,7 +442,7 @@ img {
     border-bottom: 1px solid #ddd;
     color: var(--text-light);
 }
-/* supprime les border pour le dernier element */
+
 .skill-category ul li:last-child {
     border-bottom: none;
 }
@@ -551,7 +584,6 @@ img {
 }
 
 /* Responsive Design  */
-/* sur les ecrans moines des 992px les deux colonnes passent en disposition verticale */
 @media (max-width: 992px) {
     .hero-content h1 {
         font-size: 2.8rem;
@@ -569,7 +601,12 @@ img {
     .skill-category {
         flex: 100%;
     }
+
+    .navbar .nav-links {
+        display: none; /* Hide nav links on small screens */
+    }
+
+    .burger {
+        display: block; /* Show burger icon on small screens */
+    }
 }
-
-
-    
