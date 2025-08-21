@@ -339,6 +339,21 @@ img {
     width: 65%;
 }
 
+.React::after {
+    width: 60%;
+}
+
+.Symfony::after {
+    width: 30%;
+}
+
+.Express::after {
+    width:40%;
+}
+
+.Laravel::after {
+    width: 30%;
+}
 /* Projects Section */
 .projects {
     padding: 100px 0;
